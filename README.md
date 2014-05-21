@@ -39,7 +39,7 @@ $msg = _t(“This is a message for translation”);
 echo $msg;
 ```
 #### 3.2. Text in HTML files
-```php
+```html
 <p>
 	<span><?php echo _t(“This is a span text”);?></span>
 </p>
@@ -49,3 +49,19 @@ echo $msg;
 ```html
 <img src=“/path/to/image/<?php echo _t(“banner.png”);?>”/>
 ```
+#### 4.2. With static pages
+```html
+<h2><?php echo _t(“My CMS Page”);?></h2>
+<?php include(_t(“cms_page.phtml”));?>
+```
+### 5. Translating with parameters
+```php
+<?php
+$msg = _t(“This photo has {comments} {commentText}”, array(
+	“{comments}”	=> $totalComments,
+	“{commentText} => _p(“comment", “comments", $totalComments)
+));
+echo $msg;
+```
+If `$totalComments  = 5`, this will output:
+`This photo has 5 comments`
