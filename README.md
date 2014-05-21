@@ -65,3 +65,11 @@ echo $msg;
 ```
 If `$totalComments  = 5`, this will output:
 `This photo has 5 comments`
+### 6. Switch language on the fly
+To switch your page to another language, just start with:
+```php
+// put some code to get $lang here ... (en, fr, vi)
+
+putenv("LANGUAGE={$lang}"); // $lang is
+
+```
