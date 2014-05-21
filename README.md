@@ -70,6 +70,6 @@ To switch your page to another language, just start with:
 ```php
 // put some code to get $lang here ... (en, fr, vi)
 
-putenv("LANGUAGE={$lang}"); // $lang is
+putenv("LANGUAGE={$lang}");
 
 ```
