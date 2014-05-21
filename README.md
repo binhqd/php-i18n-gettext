@@ -31,3 +31,16 @@ $config = array(
 
 return $config;
 ```
+### 3. Converting text
+#### 3.1. Text in PHP scripts
+```php
+<?php
+$msg = _t(“This is a message for translation”);
+echo $msg;
+```
+#### 3.2. Text in HTML files
+```php
+<p>
+	<span><?php echo _t(“This is a span text”);?></span>
+</p>
+```
