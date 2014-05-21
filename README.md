@@ -44,3 +44,8 @@ echo $msg;
 	<span><?php echo _t(“This is a span text”);?></span>
 </p>
 ```
+### 4. Multi-language for images or static pages
+#### 4.1. With images
+```html
+<img src=“/path/to/image/<?php echo _t(“banner.png”);?>”/>
+```
