@@ -50,7 +50,7 @@ echo $msg;
 <img src=“/path/to/image/<?php echo _t(“banner.png”);?>”/>
 ```
 #### 4.2. With static pages
-```html
+```php
 <h2><?php echo _t(“My CMS Page”);?></h2>
 <?php include(_t(“cms_page.phtml”));?>
 ```
